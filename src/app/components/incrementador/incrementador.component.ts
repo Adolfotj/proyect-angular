@@ -18,8 +18,7 @@ export class IncrementadorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('Here : ' + this.porcentaje);
-    console.log('Here : ' + this.leyenda)
+    
   }
 
   incrementar() {

@@ -10,10 +10,12 @@ import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { IncrementadorComponent } from './components/incrementador/incrementador
     PagesModule,
     SharedModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

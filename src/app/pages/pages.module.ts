@@ -18,6 +18,7 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { GraficaDounetComponent } from '../components/grafica-dounet/grafica-dounet.component';
 // ng2-chart
 import { ChartsModule } from 'ng2-charts';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 
 
@@ -28,7 +29,8 @@ import { ChartsModule } from 'ng2-charts';
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficaDounetComponent
+        GraficaDounetComponent,
+        AcountSettingsComponent
     ],
     imports: [ 
         SharedModule,
