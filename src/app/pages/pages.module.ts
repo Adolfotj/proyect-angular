@@ -19,6 +19,8 @@ import { GraficaDounetComponent } from '../components/grafica-dounet/grafica-dou
 // ng2-chart
 import { ChartsModule } from 'ng2-charts';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -30,7 +32,9 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
         Graficas1Component,
         IncrementadorComponent,
         GraficaDounetComponent,
-        AcountSettingsComponent
+        AcountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports: [ 
         SharedModule,
