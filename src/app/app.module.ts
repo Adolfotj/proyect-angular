@@ -7,7 +7,7 @@ import { APP_ROUTES } from './app.routes';
 //Modulos
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 
 // Servicios
@@ -31,6 +31,7 @@ import { RegisterComponent } from './login/register.component';
     PagesModule,
     SharedModule,
     FormsModule,
+    ReactiveFormsModule,
     ChartsModule,
     ServiceModule
   ],
