@@ -7,6 +7,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { NotpagefoundComponent } from './notpagefound/notpagefound.component';
 
 import { RouterModule } from '@angular/router';
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { RouterModule } from '@angular/router';
     ],
     imports: [
         RouterModule,
-        CommonModule
+        CommonModule,
+        PipesModule
     ],
     exports: [
         NotpagefoundComponent,

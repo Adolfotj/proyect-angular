@@ -22,6 +22,10 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
+// Pipes Module
+import { PipesModule } from '../pipes/pipes.module';
+import { ProfileComponent } from './profile/profile.component';
+
 
 
 @NgModule({
@@ -34,13 +38,16 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         GraficaDounetComponent,
         AcountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
-    imports: [ 
+    imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule
      ],
     exports: [
         DashboardComponent,
