@@ -25,6 +25,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 // Pipes Module
 import { PipesModule } from '../pipes/pipes.module';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 
 
@@ -39,7 +40,8 @@ import { ProfileComponent } from './profile/profile.component';
         AcountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent
     ],
     imports: [
         CommonModule,
