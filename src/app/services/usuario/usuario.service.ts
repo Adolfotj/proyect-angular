@@ -147,6 +147,12 @@ export class UsuarioService {
       })
   }
 
+  cargarUsuarios(desde: number = 0) {
+
+    let url = URL_SERVICES + '/usuario?desde=' + desde;
+    return this.http.get(url);
+  }
+
 
 
 }
