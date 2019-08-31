@@ -120,12 +120,15 @@ export class UsuarioService {
 
           map((res: any) => {
 
-            console.log(res);
+            if ( usuario._id === this.usuario._id ) {
+              let usuarioDB: Usuario = res.usuario;
+              this.guardarStorage( usuarioDB._id, this.token, usuarioDB );
+            }
 
-            this.guardarStorage(res.usuario._id, this.token, res.usuario);
+            swal('Usuario actualizado', usuario.nombre, 'success' );
 
-            swal('Usuario Actualizado', usuario.nombre, 'success');
             return true;
+
           })
 
         );
@@ -151,6 +154,30 @@ export class UsuarioService {
 
     let url = URL_SERVICES + '/usuario?desde=' + desde;
     return this.http.get(url);
+  }
+
+  buscarUsuarios(termino: string) {
+
+    let url = URL_SERVICES + '/busqueda/coleccion/usuarios/' + termino;
+    return this.http.get(url)
+      .pipe(
+        map((resp: any) => resp.usuarios)
+      );
+  }
+
+  borrarUsuario( id: string ) {
+
+    let url = URL_SERVICES + '/usuario/' + id;
+    url += '?token=' + this.token;
+
+    return this.http.delete( url )
+        .pipe(
+          map( resp => {
+            swal('Usuario borrado', 'El usuario a sido eliminado correctamente', 'success');
+            return true;
+          })
+        );
+
   }
 
 
