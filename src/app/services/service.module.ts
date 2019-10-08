@@ -6,6 +6,7 @@ import { SettingService,
          SharedService,
          SidebarService,
          LoginGuardGuard,
+         AdminGuard,
          UsuarioService,
          HospitalService,
          MedicoService,
@@ -26,6 +27,7 @@ import { SettingService,
     HospitalService,
     MedicoService,
     LoginGuardGuard,
+    AdminGuard,
     SubirArchivoService
   ]
 })
