@@ -10,7 +10,8 @@ import { SettingService,
          UsuarioService,
          HospitalService,
          MedicoService,
-         SubirArchivoService } from './service.index';
+         SubirArchivoService,
+         VerificarTokenGuard } from './service.index';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { SettingService,
     MedicoService,
     LoginGuardGuard,
     AdminGuard,
+    VerificarTokenGuard,
     SubirArchivoService
   ]
 })
